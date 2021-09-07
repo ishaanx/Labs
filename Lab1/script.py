@@ -1,5 +1,6 @@
 ## Lab 101
 
+
 # Generate triangle
 def tri(n):
     for i in range(0,n):

@@ -64,3 +64,38 @@ newlist = oldList.copy()
 print(newlist)
 
 #10. Write a Python program to find the list of words that are longer than n from a given list of words. 
+
+def long_words(n, str):  
+    word_len = []  
+    txt = str.split(" ")  
+    for x in txt:  
+        if len(x) > n:  
+            word_len.append(x)  
+    return word_len   
+print(long_words(3, "The quick brown fox jumps over the lazy dog")) 
+
+#11. compare two lists and return true if even 1 object matches
+
+def compare_lists(list1,list2):
+    result = False
+    for x in list1:
+        for y in list2:
+            if x == y:
+                result = True
+                return result
+print(compare_lists([1,2,3,4],[5,6,7,0]))
+
+#12 Write a Python function that takes two lists and returns True if they have at least one common member. 
+
+list1 = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+print ('Original list is :',list1)
+
+del list1[5]
+del list1[4]
+del list1[0]
+print('Modified list is: ',list1)
+
+#13 3d array
+
+symbol = [[ ['*' for col in range(3)] for col in range(4)] for row in range(6)]
+print(symbol)
