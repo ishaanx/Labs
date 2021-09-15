@@ -62,3 +62,41 @@ print(tuplex)
 tuplex = np.array(tuplex)
 tuplex = np.delete(tuplex, [1])
 print(tuplex)
+
+# 13 - Slice a tuple
+mytuple = ('a','b','c','d')
+print(mytuple[1])
+print(mytuple[3])
+
+# 14 - Find index of an item in tuple
+mytuple = ('a','b','c','d')
+index = mytuple.index('c')
+print('Index of c is: ',index)
+
+#15. Write a Python program to find the length of a tuple
+mytuple = ('a','b','c','d')
+print(len(mytuple))
+
+#16. Write a Python program to convert a tuple to a dictionary. 
+mytuple = (('a',1), ('b',2))
+tupeTOdict = dict(mytuple)
+print (tupeTOdict)
+
+#17. Write a Python program to unzip a list of tuples into individual lists. 
+mytuple = (('I','She'), ('passed','Failed'), ('!','.'))
+temp = list(zip(*mytuple))
+print(str(temp))
+
+#18. Reverse a tuple
+def reverse(mytuple):
+    new = ()
+    for x in reversed(mytuple):
+        new = new + (x,)
+    print(new)
+mytuple = ('Ishan','is','name','My')
+reverse(mytuple)
+
+# String formatting
+t = (100, 200, 300)
+print('This is a tuple {0}'.format(t))
+
